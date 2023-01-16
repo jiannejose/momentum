@@ -1,0 +1,16 @@
+:root {
+    --magenta-900: #dd1173;
+    --magenta-800: #fc0a7e;
+
+    --white-900: #ffffff
+}
+
+@font-face {
+    font-family: "GothicA1 Regular";
+    src: url("../assets/fonts/GothicA1-Regular.ttf");
+}
+
+@font-face {
+    font-family: "GothicA1 Medium";
+    src: url("../assets/fonts/GothicA1-Medium.ttf");
+}

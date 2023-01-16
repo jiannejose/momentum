@@ -1,0 +1,21 @@
+h1 {
+    font-family: "GothicA1 Medium";
+    font-size: 42px;
+    letter-spacing: 0.015em;
+    line-height: 1em;
+    transition: all 200ms ease;
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 62px;
+    }
+}
+
+/*Header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0 0 20px;
+}

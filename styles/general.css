@@ -1,0 +1,12 @@
+/*General*/
+html {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "GothicA1 Regular";
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
