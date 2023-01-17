@@ -1,7 +1,7 @@
 /*** Backgrounds ***/
 .page-header__bg {
     background-image: linear-gradient(135deg, #dd1173, #350e47);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 /*** Logo ***/
@@ -31,6 +31,11 @@
     margin-bottom: 0;
 }
 
+/*** Nav List ***/
+.nav-list {
+    display: none;
+}
+
 /*** Hero ***/
 .hero {
     position: relative;
@@ -38,6 +43,7 @@
     margin: 0 auto;
     padding-top: 90px;
     color: var(--white-900);
+    z-index: 10;
 }
 
 .hero p {
@@ -49,15 +55,17 @@
 
 .hero__image {
     position: relative;
-    left: -10px;
+    right: 10px;
     margin: 30px auto;
     width: 92%;
     max-width: 530px;
+    transition: all 200ms ease;
 }
 
 .hero__image img {
     position: relative;
     left: 12px;
+    width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -66,21 +74,39 @@
     }
 
     .hero__image {
-        top: -60px;
+        top: -45px;
+        margin-bottom: 0;
     }
 }
 
-/*** Buttons ***/
-.button {
-    display: inline-block;
-    padding: 20px 40px;
-    border-radius: 3px;
-    background-color: var(--magenta-800);
-    color: var(--white-900);
-    text-decoration: none;
-    font-weight: 600;
-    letter-spacing: 0.03em;
+@media screen and (min-width: 1024px) {
+    .hero {
+        width: calc(100% - 200px);
+        margin: 150px auto 0;
+    }
 
+    .hero p {
+        font-size: 30px;
+    }
+
+    .hero__image {
+        position: absolute;
+        top: -78px;
+        right: -60px;
+        max-width: 700px;
+        margin: 0;
+        z-index: -1;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .hero {
+        width: calc(100% - 300px);
+    }
+
+    .hero__image {
+        right: -90px;
+    }
 }
 
 /*** Arrow Down ***/
@@ -88,6 +114,8 @@
     position: relative;
     left: 50%;
     margin-top: 50px;
+    padding-bottom: 30px;
+    transition: all 200ms ease;
 }
 
 .arrow-down {
@@ -112,3 +140,35 @@
     transform: rotate(-135deg);
 }
 
+@media screen and (min-width: 768px) {
+    .arrow-down__container {
+        margin-top: -55px;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .arrow-down__container {
+        margin-top: 210px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .arrow-down__container {
+        margin-top: 250px;
+    }
+}
+
+
+/*** Buttons ***/
+.button {
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 3px;
+    background-color: var(--magenta-800);
+    color: var(--white-900);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+
+}

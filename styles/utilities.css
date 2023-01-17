@@ -1,3 +1,4 @@
+/*** Margin Bottom ***/
 .u-mb-10 {
     margin-bottom: 10px;
 }
@@ -10,10 +11,16 @@
     margin-bottom: 50px;
 }
 
-.u-mt-50 {
-    margin-top: 50px;
-}
 
+/*** Margin Top ***/
 .u-mt-20 {
     margin-top: 20px;
+}
+
+.u-mt-30 {
+    margin-top: 20px;
+}
+
+.u-mt-50 {
+    margin-top: 50px;
 }
